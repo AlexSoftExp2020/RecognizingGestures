@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                NavigationLink(destination: //MARK: TODO TapView(), label: <#T##() -> View#>)
+                NavigationLink(destination: TapView()) {
+                    //MARK: TODO GestureRow
+                }
             }
             .navigationTitle("Gestures")
         } detail: {
