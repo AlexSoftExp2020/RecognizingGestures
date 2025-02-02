@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct TapView: View {
+    @State private var color: Color = Color.primary
+    
+    var tapGesture: some Gesture {
+        TapGesture()
+            .onEnded {
+            withAnimation {
+                color = Color.random()
+            }
+        }
+    }
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
