@@ -18,8 +18,24 @@ struct TapView: View {
             }
         }
     }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Tap the rectangle to change its color")
+            Spacer()
+            Rectangle()
+                .foregroundColor(color)
+                .frame(width: 250, height: 450)
+                .gesture(tapGesture)
+            Spacer()
+        }
+        .navigationTitle("Tap")
+        .padding()
+        .toolbar {
+            Button("Reset") {
+                color = Color.primary
+            }
+        }
     }
 }
 
