@@ -14,7 +14,10 @@ struct ContentView: View {
                 NavigationLink(destination: TapView()) {
                     GestureRow(title: "Tap", description: "Tap a shape to interact with it.", systemImage: "hand.point.up.left")
                 }
-                NavigationLink(destination: //MARK: TODO LongPressView(), label: <#T##() -> View#>)
+                NavigationLink(destination: LongPressView()) {
+                    GestureRow(title: "Touch and Hold", description: "Touch and hold a shape to interact with it.", systemImage: "hand.tap")
+                }
+                
             }
             .navigationTitle("Gestures")
         } detail: {
