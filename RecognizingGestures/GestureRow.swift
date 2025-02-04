@@ -33,5 +33,7 @@ struct GestureRow: View {
 }
 
 #Preview {
-    GestureRow()
+    GestureRow(title: "Drag",
+               description: "Drag a shape using one finger",
+               systemImage: "arrow.up.and.down.and.arrow.left.and.right")
 }
