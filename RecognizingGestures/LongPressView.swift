@@ -30,7 +30,22 @@ struct LongPressView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Touch and hold the capsule to change its size")
+            Spacer()
+            Capsule()
+                .foregroundColor(.yellow)
+                .frame(width: sizes[sizeIndex].width, height: sizes[sizeIndex].height)
+                .gesture(longPressGesture)
+            Spacer()
+        }
+        .navigationTitle("Touch and Hold")
+        .padding()
+        .toolbar {
+            Button("Reset") {
+                sizeIndex = 0
+            }
+        }
     }
 }
 
