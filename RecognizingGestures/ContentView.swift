@@ -12,12 +12,13 @@ struct ContentView: View {
         NavigationSplitView {
             List {
                 NavigationLink(destination: TapView()) {
-                    //MARK: TODO GestureRow
+                    GestureRow(title: "Tap", description: "Tap a shape to interact with it.", systemImage: "hand.point.up.left")
                 }
+                NavigationLink(destination: //MARK: TODO LongPressView(), label: <#T##() -> View#>)
             }
             .navigationTitle("Gestures")
         } detail: {
-            Text()
+            Text("Select a Gesture Example")
         }
 
     }
