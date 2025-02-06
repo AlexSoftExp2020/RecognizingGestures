@@ -20,7 +20,7 @@ struct ContentView: View {
                 NavigationLink(destination: DragView()) {
                     GestureRow(title: "Drag", description: "Drag a shape using one finger.", systemImage: "arrow.up.and.down.and.arrow.left.and.right")
                 }
-                //MARK: TODO
+                NavigationLink(destination: //RotateView(), label: <#T##() -> View#>)
             }
             .navigationTitle("Gestures")
         } detail: {
