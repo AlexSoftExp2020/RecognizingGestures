@@ -23,6 +23,7 @@ struct ContentView: View {
                 NavigationLink(destination: RotateView()) {
                     GestureRow(title: "Rotate", description: "Rotate a shape with two fingers.", systemImage: "arrow.triangle.2.circlepath")
                 }
+                NavigationLink(destination: //MARK: TODO SingleView() , label: <#T##() -> View#>)
             }
             .navigationTitle("Gestures")
         } detail: {
