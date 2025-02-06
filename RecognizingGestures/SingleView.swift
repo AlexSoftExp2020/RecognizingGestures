@@ -28,7 +28,7 @@ struct SingleView: View {
             Spacer()
             Path { path in
                 path.move(to: lineStart)
-                path.move(to: lineEnd)
+                path.addLine(to: lineEnd)
             }
             .stroke(Color.green, lineWidth: 8.0)
             .contentShape(Rectangle())
